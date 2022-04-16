@@ -28,13 +28,13 @@ else:
         
         # Sets condtions of game results depending on user inputs and computer random selection
         if user == comp_status:
-            status = " Bruh a Tie"
+            status = "Bruh a Tie!"
             score["Tie"] +=1
         elif (user == "rock" and comp_status == "scissors") or (user == "scissors" and comp_status == "paper") or (user == "paper" and comp_status == "rock"):
             status = "User wins !"
             score["User"] +=1
         else:
-            status = "Computer wins !"
+            status = "Computer wins!!!"
             score["Computer"] +=1
         
         # Delays  Printing Computer selection for nice effect
@@ -44,20 +44,30 @@ else:
         print(" ")
         time.sleep(0.5) 
         # Delays Printing result for nice effect
-        print("The result is " + status)
+        print("The result:  " + status)
         print(" ")
          # Delays Printing score for nice effect
         time.sleep(0.25) 
         print(score)
         print(" ")
         game = input("To start a new game enter 1, to end game enter 0: ")
+        print(" ")
     else:
         # prints score and ends game if user inputs 0
         time.sleep(1)
+        print(" ")
         print("The game has ended the final score is:")
-        print(" ")
-        print(" ")
         print(score)
+        print(" ")
+        #Picks winner of game depending on final score
+        if score["User"] == score["Computer"] or (max(score, key=score.get) == "Tie"):
+            print("The Game ends in a Tie")
+        else:
+            print(max(score, key=score.get)+ " Wins the Game!!!")
+    
 
 
+    
+        
+    
     
