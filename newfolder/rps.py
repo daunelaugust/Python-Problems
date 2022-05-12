@@ -1,5 +1,5 @@
 import random
-import time
+import time 
 
 game = input("To start the game enter 1, to end game enter 0: ")
 score = {"User": 0, "Computer": 0, "Tie": 0 }
@@ -64,6 +64,8 @@ else:
             print("The Game ends in a Tie")
         else:
             print(max(score, key=score.get)+ " Wins the Game!!!")
+        #this is a test
+        
     
 
 
