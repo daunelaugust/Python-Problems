@@ -1,2 +1,2 @@
-# Click Code Wars and Leetcode for python challenge problems I have done
+# Click Code Wars for python challenge problems I have done
 
